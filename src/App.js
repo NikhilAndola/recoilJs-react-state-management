@@ -1,11 +1,17 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from 'recoil';
 
 export default function App() {
   return (
-    <div>
+    <RecoilRoot>
       <h1>Recoil js!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    </RecoilRoot>
   );
 }
